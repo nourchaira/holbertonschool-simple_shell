@@ -8,5 +8,9 @@
 
 char *readline(void);
 int main (void);
+char **parseinputLine(char *inputBuffer);
+int shell(char *readline);
+int execute_line(char *buuf[]);
+void sigintHandler(__attribute__((unused)) int sig_num);
 
 #endif
