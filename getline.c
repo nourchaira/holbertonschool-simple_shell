@@ -1,4 +1,4 @@
-#include "main.h"
+#include "shell.h"
 /**
  *getline -gets the line.
  *Return: the command ready to tokz
