@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# holbertonschool-simple_shell
-=======
 # Simple Shell 
 
 ## Description 📖
@@ -79,4 +76,3 @@ Write a UNIX command line interpreter.
 ## Authors
 [Mohamed aziz layouni](hhttps://github.com/laayounii)
 [Nour chaira](https://github.com/nourchaira)
->>>>>>> 29728c0 (readme)
