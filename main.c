@@ -1,0 +1,44 @@
+#include "main.h"
+
+/**
+ * main - the main function for the shell
+ * Return: the integer status
+ */
+
+int main(void)
+{
+	int i;
+	size_t buffer_size = 0;
+	char *input = NULL;
+
+	while (1)
+	{
+		if (getline(&input, &buffer_size, stdin) == EOF)
+		{
+			free(input);
+			exit(0);
+		}
+		if (strcmp(input, "exit\n") == 0)
+		{
+			free(input);
+			exit(0);
+		}
+		pid_t child_pid = fork();
+		if (child_pid == 0)
+		{
+			shell(input);
+			free(input);
+			exit;
+		}
+		else if (child_pid < 0)
+		{
+			perror("fork failed");
+			exit;
+		}
+		else
+		{
+			waitpid(child_pid, &i, 0);
+		}
+	}
+	return 0;
+}
