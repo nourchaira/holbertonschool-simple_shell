@@ -7,20 +7,20 @@
  */
 char **parseinputLine(char *inputBuffer)
 {
-    int i = 0;
-    char **line = NULL;
-    char *token = NULL;
+	int i = 0;
+	char **line = NULL;
+	char *token = NULL;
 
-    line = malloc(1024);
-    line[i] = strtok(inputBuffer, " \n\t");
-    while (token)
-    {
-        i++;
-        token = strtok(NULL, " \n\t");
-        line[i] = token;
-    }
+	line = malloc(1024);
+	line[i] = strtok(inputBuffer, " \n\t");
+	while (token)
+	{
+		i++;
+		token = strtok(NULL, " \n\t");
+		line[i] = token;
+	}
 
-    return (line);
+	return (line);
 }
 
 /**
