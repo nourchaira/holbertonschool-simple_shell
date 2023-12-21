@@ -14,6 +14,9 @@ int main(void)
 
 	while (1)
 	{
+		/**
+		 * print_prompt - print the prompt symbol.
+		 */
 		print_prompt();
 		
 		if (getline(&input, &buffer_size, stdin) == EOF)
