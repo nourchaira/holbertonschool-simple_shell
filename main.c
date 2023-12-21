@@ -10,9 +10,11 @@ int main(void)
 	int i;
 	size_t buffer_size = 0;
 	char *input = NULL;
+	pid_t child_pid;
 
 	while (1)
 	{
+		
 		if (getline(&input, &buffer_size, stdin) == EOF)
 		{
 			free(input);
@@ -23,17 +25,17 @@ int main(void)
 			free(input);
 			exit(0);
 		}
-		pid_t child_pid = fork();
+		child_pid = fork();
 		if (child_pid == 0)
 		{
 			shell(input);
 			free(input);
-			exit;
+			exit(0);
 		}
 		else if (child_pid < 0)
 		{
 			perror("fork failed");
-			exit;
+			exit(0);
 		}
 		else
 		{
