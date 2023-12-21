@@ -6,7 +6,7 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
-char *getline(void);
+char *_getline(void);
 int main (void);
 char **parseinputLine(char *inputBuffer);
 int shell(char *getline);
