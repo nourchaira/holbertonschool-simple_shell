@@ -1,0 +1,67 @@
+.TH HSH 1 "December 2023" "Version 1.0" "Holberton Simple Shell Manual"
+.SH NAME
+hsh \- a simple UNIX command interpreter
+
+.SH SYNOPSIS
+.B hsh
+[\fIOPTIONS\fR] [\fICOMMAND\fR]
+
+.SH DESCRIPTION
+Simple shell reproduces a command line interpreter designed to interact with unix systems.
+It permits to run the shell in interactive and non-interactive mode.
+This program is compatible with common shell commands.
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Display help message.
+
+.TP
+.B \-v, \-\-version
+Display version information.
+
+.SH COMMAND
+Specify a command to be executed by the shell.
+
+.SH INTERACTIVE MODE
+When run without any arguments, \fBhsh\fR enters interactive mode, allowing users to enter commands interactively.
+
+.SH NON-INTERACTIVE MODE
+\fBhsh\fR can also read commands from a file or standard input when used in non-interactive mode.
+
+.SH EXAMPLES
+Run a command interactively:
+.B
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+
+Run a command from a file:
+.B
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+
+.SH ENVIRONMENT VARIABLES
+\fBHSH_PATH\fR: Specifies the directories to search for executables.
+
+.SH EXIT STATUS
+The \fBhsh\fR command exits with the status of the last command executed.
+
+.SH AUTHORS
+Written by [Med aziz layouni] and [Nour chaira].
+
+.SH SEE ALSO
+sh(1), bash(1), csh(1)
+
+.SH COPYRIGHT
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+.SH NOTES
+This manual page is written for educational purposes and may not cover all aspects of shell functionality.
+
+.SH DISCLAIMER
+This is not a fully-featured shell and may not be suitable for all use cases. Use at your own risk.
