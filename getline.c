@@ -9,8 +9,6 @@ char *_getline(void)
 	unsigned long int y = 0;
 	char *input;
 
-    write(STDOUT_FILENO, "$ ", 2);
-
 	x = getline(&input, &y, stdin);
 	if (input == NULL)
 	{
