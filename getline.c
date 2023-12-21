@@ -3,7 +3,7 @@
  *getline -gets the line.
  *Return: the command ready to tokz
  */
-char *getline(void)
+char *_getline(void)
 {
 	ssize_t x = 0;
 	unsigned long int y = 0;
