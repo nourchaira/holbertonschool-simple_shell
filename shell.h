@@ -12,5 +12,5 @@ char **parseinputLine(char *inputBuffer);
 int shell(char *getline);
 int execute_line(char *buuf[]);
 void sigintHandler(__attribute__((unused)) int sig_num);
-
+void print_prompt(void);
 #endif
