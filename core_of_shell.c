@@ -53,17 +53,17 @@ int execute_line(char *buuf[])
 
 /**
  * shell - the core of the shell
- * @readline: the command ready for parsing and excution
+ * @getline: the command ready for parsing and excution
  * Return: the value returned from the excution
  */
 
-int shell(char *readline)
+int shell(char *getline)
 {
 	int f;
 	char **command = malloc(sizeof(char *) * 1024);
 
 	/**wait for user to enter commands */
-	command = parseinputLine(readline);
+	command = parseinputLine(getline);
 	f = execute_line(command);
 	return (f);
 }
