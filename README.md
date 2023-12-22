@@ -74,5 +74,5 @@ Write a UNIX command line interpreter.
 - Simple shell 0.4 +
 - Implement the env built-in, that prints the current environment.
 ## Authors
-[Mohamed aziz layouni](hhttps://github.com/laayounii)
+[Mohamed aziz layouni](https://github.com/laayounii)
 [Nour chaira](https://github.com/nourchaira)
