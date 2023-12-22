@@ -18,7 +18,6 @@ int main(void)
 		 * print_prompt - print the prompt symbol.
 		 */
 		print_prompt();
-		
 		if (getline(&input, &buffer_size, stdin) == EOF)
 		{
 			free(input);
@@ -46,5 +45,5 @@ int main(void)
 			waitpid(child_pid, &i, 0);
 		}
 	}
-	return 0;
+	return (0);
 }
