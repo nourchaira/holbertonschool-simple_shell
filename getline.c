@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- *getline -gets the line.
+ *_getline -gets the line.
  *Return: the command ready to tokz
  */
 char *_getline(void)
