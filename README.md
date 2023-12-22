@@ -1,3 +1,4 @@
+![Blank board](https://github.com/nourchaira/holbertonschool-simple_shell/assets/146720384/e59fe223-9780-4124-8c87-f2cbb0b857ae)
 # Simple Shell 
 
 ## Description 📖
