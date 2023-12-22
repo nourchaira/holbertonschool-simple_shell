@@ -7,7 +7,7 @@
 #include <sys/wait.h>
 
 char *_getline(void);
-int main (void);
+int main(void);
 char **parseinputLine(char *inputBuffer);
 int shell(char *getline);
 int execute_line(char *buuf[]);
